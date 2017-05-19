@@ -51,7 +51,7 @@ The email from zTrial has more detailed information on your account. It provides
 
 Click on the following video to get more details on how to conduct the trial.
 
-[![Trial Video](https://www.ibm.com/blogs/systems/wp-content/uploads/2017/05/ZTRIAL2.jpg)](https://developer.ibm.com/mainframe/wp-content/uploads/sites/46/2017/03/z_Systems_Trial_Program_Intro_ZCEE.mp4)
+[![Trial Video](img/Video.png)](https://developer.ibm.com/mainframe/wp-content/uploads/sites/46/2017/03/z_Systems_Trial_Program_Intro_ZCEE.mp4)
 
 
 

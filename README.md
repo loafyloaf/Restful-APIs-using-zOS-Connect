@@ -34,7 +34,7 @@ Your trial environment will expire three days after it is provisioned. At the en
 The starting point is the [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, choose the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
 
 ## Now what?
-
+Now we wait.   
 The same screen will tell you it takes hours for the provision to be done. So wait for an email notification from "zTrial".
 
 ## How do I access the trial?
@@ -48,3 +48,10 @@ In order to access the trial environment, you must be able to connect to a remot
     Linux users have several choices of remote desktop application, which might vary between distribution.
     
 The email from zTrial has more detailed information on your account. It provides the ip and credentials to access the remote desktop. Simply follow the instrutions and start the remote desktop.
+
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://developer.ibm.com/mainframe/wp-content/uploads/sites/46/2017/03/z_Systems_Trial_Program_Intro_ZCEE.mp4)
+
+
+
+
+

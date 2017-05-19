@@ -23,6 +23,18 @@ Your trial environment includes hands-on tutorials that explain how to:
 * **Expose a CICS COBOL program as a RESTful API.**
 * **Expose an IMS application as a RESTful API.**   
 
+If you are to expose an API from scatch, normally you would need to install z/OS Connect EE API Editor and generate the Service Archive File(.sar) from your backend service first.   
+The trials have taken care of those steps. So the focus is really on how to map the API and deploy them.   
+
+
+The steps involved in both trials are:
+* Creating an API Project
+* Importin the service SAR files
+* Modeling API: adding paths and creating methods
+* Defining HTTP-to-JSON Mappings: map arameters with the fields in the JSON schema
+* Deploy your API
+* Try it out
+
 After you complete these tutorials, you can choose to extend them, or you can explore the rest of the trial environment. The choice is yours.   
 
 ## How long is the trial?

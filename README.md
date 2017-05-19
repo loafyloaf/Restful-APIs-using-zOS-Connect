@@ -49,7 +49,7 @@ In order to access the trial environment, you must be able to connect to a remot
     
 The email from zTrial has more detailed information on your account. It provides the ip and credentials to access the remote desktop. Simply follow the instrutions and start the remote desktop.
 
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://developer.ibm.com/mainframe/wp-content/uploads/sites/46/2017/03/z_Systems_Trial_Program_Intro_ZCEE.mp4)
+[![Trial Video](https://www.ibm.com/blogs/systems/wp-content/uploads/2017/05/ZTRIAL2.jpg)](https://developer.ibm.com/mainframe/wp-content/uploads/sites/46/2017/03/z_Systems_Trial_Program_Intro_ZCEE.mp4)
 
 
 

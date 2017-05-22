@@ -1,5 +1,5 @@
 # zOS-Connect
-This Journey dscribes the steps to try out the z/OS Connect Enterprise Edition trails.
+This Journey dscribes the steps to try out the z/OS Connect Enterprise Edition trials.
 
 ## Overview
 IBM® z/OS® Connect Enterprise Edition is a framework that enables z/OS based programs and data to participate fully in the new API economy for mobile and cloud applications.

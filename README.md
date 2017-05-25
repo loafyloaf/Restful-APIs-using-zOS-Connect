@@ -14,9 +14,23 @@ The following diagram shows how z/OS Connect EE connects mobile and cloud applic
 <img src="img/Architecture.png" align="left" width="75%"  >
 <br clear="all" />
 
-## What’s in the trial?
+## Included components
+[IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)
+[IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/) 
+IBM® IMS® ???
+## Prerequisites
 
-Request this trial to gain access to a pre-configured, remote desktop environment where you can use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems.
+To request a trial, go to [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, navigate to the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
+Wait for an email notification from "zTrial".
+The waiting normally lasts several hours to one business day.   
+The trial is available through a Windows-based remote desktop environment.
+
+In order to access the trial environment, you must be able to connect to a remote system over a network connection.
+Windows users should use the built-in Remote Desktop Connection application.       
+Mac users should use the Remote Desktop app, available from the App Store.       
+Linux users have several choices of remote desktop application, which might vary between distribution.   
+
+## Steps
 
 Your trial environment includes hands-on tutorials that explain how to:
 
@@ -33,7 +47,7 @@ The steps involved in both trials are:
 * Modeling API: adding paths and creating methods
 * Defining HTTP-to-JSON Mappings: map arameters with the fields in the JSON schema
 * Deploy your API
-* Try it out
+* Try out the api
 
 After you complete these tutorials, you can choose to extend them, or you can explore the rest of the trial environment. The choice is yours.   
 
@@ -41,23 +55,7 @@ After you complete these tutorials, you can choose to extend them, or you can ex
 
 Your trial environment will expire three days after it is provisioned. At the end of the trial period, your environment will be automatically deprovisioned and all account and system data will be deleted.
 
-## Getting started
-
-The starting point is the [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, choose the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
-
-## Now what?
-Now we wait.   
-The same screen will tell you it takes hours for the provision to be done. So wait for an email notification from "zTrial".
-
 ## How do I access the trial?
-
-The trial is available through a Windows-based remote desktop environment.
-
-In order to access the trial environment, you must be able to connect to a remote system over a network connection.
-
-    Windows users should use the built-in Remote Desktop Connection application.
-    Mac users should use the Remote Desktop app, available from the App Store.
-    Linux users have several choices of remote desktop application, which might vary between distribution.
     
 The email from zTrial has more detailed information on your account. It provides the ip and credentials to access the remote desktop. Simply follow the instrutions and start the remote desktop.
 

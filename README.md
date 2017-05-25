@@ -1,5 +1,5 @@
 # zOS-Connect
-This Journey dscribes the steps to try out the z/OS Connect Enterprise Edition trials.
+This Journey describes the steps to try out the z/OS Connect Enterprise Edition trials.
 
 ## Overview
 IBM® z/OS® Connect Enterprise Edition is a framework that enables z/OS based programs and data to participate fully in the new API economy for mobile and cloud applications.
@@ -15,9 +15,10 @@ The following diagram shows how z/OS Connect EE connects mobile and cloud applic
 <br clear="all" />
 
 ## Included components
-[IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)
-[IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/) 
-IBM® IMS® ???
+
+[IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
+[IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
+IBM® IMS® ???   
 ## Prerequisites
 
 To request a trial, go to [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, navigate to the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
@@ -42,12 +43,12 @@ The trials have taken care of those steps. So the focus is really on how to map 
 
 
 The steps involved in both trials are:
-* Creating an API Project
-* Importin the service SAR files
-* Modeling API: adding paths and creating methods
-* Defining HTTP-to-JSON Mappings: map arameters with the fields in the JSON schema
-* Deploy your API
-* Try out the api
+* **Creating an API Project**
+* **Importin the service SAR files**
+* **Modeling API: adding paths and creating methods**
+* **Defining HTTP-to-JSON Mappings: map arameters with the fields in the JSON schema**
+* **Deploy your API**
+* **Try out the api**
 
 After you complete these tutorials, you can choose to extend them, or you can explore the rest of the trial environment. The choice is yours.   
 

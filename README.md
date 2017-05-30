@@ -418,7 +418,9 @@ This shows fields that are exposed through the API and made available to the RES
 3.  <span class="ph cmd">Right-click the `IN_COMMAND` field on right side of the tab, in the service definition, then click <span class="ph uicontrol">Add Assign transform</span>.</span>
 4.  <span class="ph cmd">In the <span class="ph uicontrol">Properties</span> view, at the bottom of the window, click <span class="ph uicontrol">General</span> and set <span class="ph uicontrol">Value</span> to <kbd class="ph userinput">ADD</kbd>.</span>
 
-    <div class="itemgroup info">![Screen capture showing the Properties view](img/properties_ims.gif)Leave the <span class="ph uicontrol">Omit from interface</span> option checked to exclude this value from the API documentation.
+![Screen capture showing the Properties view](img/properties_ims.gif)
+
+Leave the <span class="ph uicontrol">Omit from interface</span> option checked to exclude this value from the API documentation.
 
     <div class="note note note_note"><span class="note__title">Note:</span> This mapping defines the flow of a value, which is passed in by an API consumer, to the service associated with the API. The service then passes the value to the IMS program. At each stage, the data is transformed into formats and structures that each participant can understand.</div>
 

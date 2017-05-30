@@ -278,6 +278,8 @@ You can use your new API to check the price and stock levels of this item.
                                     "002.90", "ca_sngl_department": 10 } } } } 
 
     </div>
+Congratulations! You've successfully exposed a CICS® application as a RESTful API by using z/OS C
+
 
 ## Expose an IMS application as a RESTful API
 
@@ -364,7 +366,7 @@ This leaves the POST method. The POST method is typically used for submitting da
 
 <section class="section postreq">Next, you'll associate your API with that relevant service.</section>
 
-### Associating a service with the API
+### Associating a service with the API <a name="associate_service_with_api"></a>
 
 Associate your API to a Service Archive file.
 
@@ -399,7 +401,7 @@ In this scenario, the connection between z/OS Connect EE and IMS is configured f
 The final step is to configure the mappings between your new API and the `contacts` service, which represents the IMS program logic.
 
 
-### Mapping the request
+### Mapping the request <a name="map_request"></a>
 
 Map your API parameters to fields in the associated service.
 
@@ -431,7 +433,7 @@ Leave the <span class="ph uicontrol">Omit from interface</span> option checked t
 
 <section class="section postreq">The next step is to clean up the API response by removing fields that are not related to the API request.</section>
 
-### Mapping the response
+### Mapping the response <a name="map_response"></a>
 
 Remove irrelevant values from the response so that your API returns relevant fields only.
 
@@ -453,7 +455,7 @@ This excludes this field from the body of the response.
 
 <section class="section postreq">You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.</section>
 
-### Deploying the API
+### Deploying the API <a name="deploy_api"></a>
 
 <div class="body taskbody">
 
@@ -475,7 +477,7 @@ Package and deploy your API from within the API Editor.
 <section class="section postreq">You can test your work now, by calling the API from within the development environment by using the built-in interactive API documentation.</section>
 
 
-### Testing the API
+### Testing the API <a name="test_api"></a>
 
 Test your API by using the built-in Swagger UI.
 
@@ -510,7 +512,7 @@ You can use your new API to add a new contact.
 
     </div>
 
-<section class="section postreq">Congratulations! You've successfully exposed a IMS™ program as a RESTful API by using z/OS Connect EE!</section>
+Congratulations! You've successfully exposed a IMS™ program as a RESTful API by using z/OS Connect EE!
 
 
 

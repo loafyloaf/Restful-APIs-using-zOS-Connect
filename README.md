@@ -20,6 +20,7 @@ The following diagram shows how z/OS Connect EE connects mobile and cloud applic
 [IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
 [IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
 IBM® IMS® ???   
+
 ## Prerequisites
 
 To request a trial, go to [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, navigate to the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
@@ -32,40 +33,259 @@ Windows users should use the built-in Remote Desktop Connection application.
 Mac users should use the Remote Desktop app, available from the App Store.       
 Linux users have several choices of remote desktop application, which might vary between distribution.   
 
-## Steps
+## Expose a CICS COBOL program as a RESTful API.
 
-Your trial environment includes hands-on tutorials that explain how to:
+IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing a CICS® application through a RESTful API quick and easy.
 
-* **Expose a CICS COBOL program as a RESTful API.**
-* **Expose an IMS application as a RESTful API.**   
+![](img/topology_cics.png)
 
-If you are to expose an API from scatch, normally you would need to install z/OS Connect EE API Editor and generate the Service Archive File(.sar) from your backend service first.   
-The trials have taken care of those steps. So the focus is really on how to map the API and deploy them.   
+This scenario guides you through the steps in roughly 30 minutes. By the end of the session, you'll know how to:
 
+*   Create and deploy an API from within IBM Developer for z Systems™.
+*   Associate and map an API to a service representation of a CICS application, no code required.
+*   Test an API by using the built-in Swagger UI.
 
-The steps involved in both trials are:
-* **Creating an API Project**
-* **Importin the service SAR files**
-* **Modeling API: adding paths and creating methods**
-* **Defining HTTP-to-JSON Mappings: map arameters with the fields in the JSON schema**
-* **Deploy your API**
-* **Try out the api**
+No previous knowledge of CICS, z/OS Connect EE, or API design is needed, but some awareness of API terminology might help.
 
-After you complete these tutorials, you can choose to extend them, or you can explore the rest of the trial environment. The choice is yours.   
-
-## How long is the trial?
-
-Your trial environment will expire three days after it is provisioned. At the end of the trial period, your environment will be automatically deprovisioned and all account and system data will be deleted.
-
-## How do I access the trial?
-    
-The email from zTrial has more detailed information on your account. It provides the ip and credentials to access the remote desktop. Simply follow the instrutions and start the remote desktop.
-
-Click on the following video to get more details on how to conduct the trial.
-
-[![Trial Video](img/Video.png)](https://developer.ibm.com/mainframe/wp-content/uploads/sites/46/2017/03/z_Systems_Trial_Program_Intro_ZCEE.mp4)
+Please wait a moment while your development environment loads (this takes about 20 seconds). When it loads, get started by [Creating the API Project](2_create_api_project.html "Create an API project that will contain your API and service mapping.").
 
 
 
+1.  [Creating the API Project](../../zos-connect-ee/cics/2_create_api_project.html)  
+    Create an API project that will contain your API and service mapping.
+2.  [Creating the API](../../zos-connect-ee/cics/3_create_api.html)  
+    Create a basic API that uses RESTful principles.
+3.  [Associating a service with the API](../../zos-connect-ee/cics/4_associate_service_with_api.html)  
+    Associate your API to a Service Archive file.
+4.  [Mapping the request](../../zos-connect-ee/cics/5_map_request.html)  
+    Map your API parameters to fields in the associated service.
+5.  [Mapping the response](../../zos-connect-ee/cics/6_map_response.html)  
+    Remove irrelevant values from the response so that your API returns relevant fields only.
+6.  [Deploying the API](../../zos-connect-ee/cics/7_deploy_api.html)  
+    Package and deploy your API from within the API Editor.
+7.  [Testing the API](../../zos-connect-ee/cics/8_test_api.html)  
+    Test your API by using the built-in Swagger UI.
 
+### Creating the API Project
+
+
+Create an API project that will contain your API and service mapping.
+
+
+Before you create your API, you must create a new API project. A z/OS® Connect EE API Project contains files that represent the API, and the mappings from the API to the services.
+
+<div class="note note note_note"><span class="note__title">Note:</span> You will connect to a CICS® application that holds inventory information about office stationary (for example, price and stock levels), so let's call our project <kbd class="ph userinput">catalog</kbd>.</div>
+
+
+1.  <span class="ph cmd">On the development environment menu bar, click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">New</span> > <span class="ph uicontrol">Project...</span> to open the New Project wizard.</span>
+2.  <span class="ph cmd">Expand the <span class="ph uicontrol">z/OS Connect Enterprise Edition</span> folder, select <span class="ph uicontrol">z/OS Connect EE API Project</span>, and click <span class="ph uicontrol">Next</span>.</span>
+3.  <span class="ph cmd">Complete the fields as follows:</span>
+
+
+    *   type <kbd class="ph userinput">catalog</kbd> in the <span class="ph uicontrol">Project name</span> and <span class="ph uicontrol">API name</span> fields.
+    *   type <kbd class="ph userinput">/catalogManager</kbd> in the <span class="ph uicontrol">Base path</span> field.
+
+    ![A screen shot that shows the API project wizard, with the required text boxes filled in.](img/new_proj_zc_cics.png)  
+    </div>
+
+4.  <span class="ph cmd">Click <span class="ph uicontrol">Finish</span> to create the project in the Project Explorer.</span>
+
+    <div class="itemgroup info">The z/OS Connect EE API Editor dialog opens.</div>
+
+<section class="section result">Your API project is created.</section>
+
+<section class="section postreq">The next step is to create your API: let's do that now.</section>
+
+
+### Creating the API
+
+Create a basic API that uses RESTful principles.
+
+<section class="section context">You'll create an API that a consumer can use to query the stationery catalog. The API will connect through a service to the COBOL application in CICS®.</section>
+
+1.  <span class="ph cmd">In the <span class="ph uicontrol">Path</span> field, replace `/newPath1` with the value <kbd class="ph userinput">/items/{itemID}</kbd>.</span>
+
+    <div class="itemgroup info">The parameter `{itemID}` is a placeholder that represents the value that is provided by an API consumer when they make a request.
+
+    For example, the item `24-pack of black ball pens` has an ID of `10`, so you would specify <kbd class="ph userinput">/items/10</kbd> in your API request.
+
+    </div>
+
+2.  <span class="ph cmd">Remove the POST, PUT, and DELETE methods for this path by clicking the <span class="ph uicontrol">X</span> icon associated with each method.</span>
+
+    <div class="itemgroup info">This leaves the GET method. The GET method is typically used for retrieving data, which is the purpose of your API.  
+    ![Screen capture that shows correctly configured Paths and Methods.](img/leave_get_cics.gif)  
+    </div>
+
+3.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
+
+<section class="section result">You've created the front end of your API! You must now connect the API to the application in CICS. In z/OS Connect EE, this connection is through a service, which represents the logic of the CICS application in a more consumable form.</section>
+
+<section class="section postreq">Next, you'll associate your API with that relevant service.</section>
+
+### Associating a service with the API
+
+Associate your API to a Service Archive file.
+
+In z/OS Connect EE, a service archive file (`.sar` file) represents the underlying z/OS® asset.
+
+z/OS Connect EE provides tooling to generate `.sar` files for its compatible subsystems (including CICS®, IMS™, DB2®, and IBM® MQ).
+
+In this scenario, the `.sar` file is already generated, so you can focus on creating, deploying, and testing your API.
+
+
+1.  <span class="ph cmd">Click <span class="ph uicontrol">Service...</span>.</span>
+
+    <div class="itemgroup info">The <span class="ph uicontrol">Select a z/OS Connect EE Service</span> dialog box opens.</div>
+
+2.  <span class="ph cmd">Click <span class="ph uicontrol">File System</span>.</span>
+3.  <span class="ph cmd">Browse to `C:/Service Archive Files`.</span>
+4.  <span class="ph cmd">Select the `inquireSingle.sar` file and click <span class="ph uicontrol">Open</span>.</span>
+5.  <span class="ph cmd">In the dialog box that opens, click <span class="ph uicontrol">OK</span> to confirm the import.</span>
+6.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
+
+    <div class="itemgroup info">The `inquireSingle` service is now associated with the get method of your API.  
+    ![Screen capture that shows the inquireSingle service that is correctly associated with the GET method of your API.](img/serv_assoc.png)  
+    </div>
+
+7.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
+
+<section class="section result">Great, the GET method of your API is now configured to connect to the CICS application through the `inquireSingle` service.</section>
+
+In this scenario, the connection between z/OS Connect EE and CICS is configured for you (using the WOLA service provider).
+
+The final step is to configure the mappings between your new API and the `inquireSingle` service, which represents the CICS COBOL application logic.
+
+
+### Mapping the request
+
+
+Map your API parameters to fields in the associated service.
+
+<section class="section context">Use the request mapping to associate parameters in your API with fields in the `inquireSingle` service, and to remove redundant fields from the API documentation.</section>
+
+1.  <span class="ph cmd">Next to the GET method, click <span class="ph uicontrol">Mapping...</span> then click <span class="ph uicontrol">Open Request Mapping</span>.</span>
+
+    <div class="itemgroup info">The <span class="ph uicontrol">request</span> tab opens.</div>
+
+2.  <span class="ph cmd">Right-click `ca_request_id`, then click <span class="ph uicontrol">Add Assign transform</span>.</span>
+
+    <div class="itemgroup info">A static value is assigned to the field in the request schema.</div>
+
+3.  <span class="ph cmd">In the <span class="ph uicontrol">Properties</span> view, at the bottom of the window, click <span class="ph uicontrol">General</span> and set <span class="ph uicontrol">Value</span> to <kbd class="ph userinput">01INQS</kbd>.</span>
+
+    <div class="itemgroup info">![Screen capture showing the Properties view](img/properties_cics.gif)Leave the <span class="ph uicontrol">Omit from interface</span> option checked to exclude this value from the API documentation.</div>
+
+4.  <span class="ph cmd">Expand the field `ca_inquire_single` so that the sub-field `ca_single_item` is visible.</span>
+5.  <span class="ph cmd">Select the fields `ca_return_code`, `ca_response_message`, and `ca_single_item`.</span>
+
+    <div class="itemgroup info">Press Ctrl and click to select multiple fields.</div>
+
+6.  <span class="ph cmd">Right-click one of the selected fields, then click <span class="ph uicontrol">Add Remove transform</span>.</span>
+
+    <div class="itemgroup info">The fields are now removed from the API documentation.</div>
+
+7.  <span class="ph cmd">Connect the path parameter <span class="ph uicontrol">itemID</span> to the field `ca_item_ref_req` by clicking and dragging one to the other.</span>
+
+
+    A <span class="ph uicontrol">Move</span> action is created that assigns the path parameter `itemID` in the HTTP request to the field `ca_item_ref_req` in the service's JSON content.
+
+    ![](img/move_action_cics.gif)  
+
+    <div class="note note note_note"><span class="note__title">Note:</span> This mapping defines the flow of a value, which is passed in by an API consumer, to the service associated with the API. The service then passes the value to the CICS application. At each stage, the data is transformed into formats and structures that each participant can understand.</div>
+
+
+8.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
+9.  <span class="ph cmd">Close the <span class="ph uicontrol">request</span> tab.</span>
+
+<section class="section postreq">The next step is to clean up the API response by removing fields that are not related to the API request.</section>
+
+
+### Mapping the response
+
+Remove irrelevant values from the response so that your API returns relevant fields only.
+
+<section class="section context">The API you're creating is designed to pass back information about a requested item in the catalog application. However, the service `inquireSingle` contain several fields that aren’t relevant to that request.
+
+You can safely remove these fields to make the API response and the API documentation clearer.
+
+</section>
+
+1.  <span class="ph cmd">Click <span class="ph uicontrol">Mapping...</span> for the GET method, then click <span class="ph uicontrol">Open Response Mapping</span>.</span>
+2.  <span class="ph cmd">Expand the field `ca_inquire_single` so that the sub-field `ca_item_ref_req` is visible.</span>
+3.  <span class="ph cmd">On the right side of the window, select the `ca_request_id` and `ca_item_ref_req` fields.</span>
+
+    <div class="itemgroup info">Press Ctrl and click to select multiple fields.</div>
+
+4.  <span class="ph cmd">Right-click one of the selected fields, and select <span class="ph uicontrol">Add Remove transform</span>.</span>
+
+    <div class="itemgroup info">This excludes these fields from the body of the response.  
+    ![Screen capture that shows the correct configuration for the response tab for this scenario.](img/remove_action_cics.png)  
+    </div>
+
+5.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
+6.  <span class="ph cmd">Close the <span class="ph uicontrol">response</span> tab.</span>
+
+<section class="section result">You completed the request and response mappings.</section>
+
+<section class="section postreq">You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.</section>
+
+
+### Deploying the API
+
+
+Package and deploy your API from within the API Editor.
+
+<section class="section context">Deploying your API is a quick, simple process that you can complete without leaving the developer environment.</section>
+
+1.  <span class="ph cmd">In the <span class="ph uicontrol">Project Explorer</span> view, select your API project (<span class="ph uicontrol">catalog</span>) and right-click to select <span class="ph menucascade"><span class="ph uicontrol">z/OS Connect EE</span> > <span class="ph uicontrol">Deploy API to z/OS Connect EE Server</span></span>.</span>
+2.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
+
+    <div class="itemgroup info">![Screen capture showing the Deploy API dialog box](img/deploy_cics.png)Your API is being deployed.</div>
+
+3.  <span class="ph cmd">When deployment completes, click <span class="ph uicontrol">OK</span> on the Result dialog box.</span>
+
+    <div class="itemgroup stepresult">Your API is now successfully deployed!</div>
+
+<section class="section result">Creating and deploying this API using z/OS Connect EE gives your API consumers an easy, programmable way to interact with a CICS® application without having to work with unfamiliar data structures, or understand CICS.</section>
+
+<section class="section postreq">You can test your work now, by calling the API from within the development environment by using the built-in interactive API documentation.</section>
+
+
+### Testing the API
+
+Test your API by using the built-in Swagger UI.
+
+<section class="section context">The OpenAPI (previously Swagger) specification is one of the most popular frameworks for documenting APIs. Any API that you create by using the z/OS Connect EE API Editor is automatically OpenAPI 2.0 compliant.
+
+You can use the built-in Swagger UI to test out an API from within the developer environment. Let's try that now by opening up the Swagger UI for your new API, and request information about an item in the catalog.
+
+</section>
+
+1.  <span class="ph cmd">In the <span class="ph uicontrol">z/OS Connect EE Servers</span> view, expand the API folder, right-click your API, and click <span class="ph uicontrol">Open in Swagger UI</span>.</span>
+
+    <div class="itemgroup info">The Swagger UI for your API opens.</div>
+
+2.  <span class="ph cmd">In the tab that opens, click <span class="ph uicontrol">default</span>, and then <span class="ph uicontrol">/items/{itemID}</span></span>
+
+    <div class="itemgroup info">Take a look at the Example Value JSON. You'll notice that the fields that you removed as part of the mapping are not present.</div>
+
+The CICS application that you have exposed by creating this API contains an inventory of office stationary. A 24-pack of black ball pens has an `itemID` of <kbd class="ph userinput">10</kbd>.
+
+You can use your new API to check the price and stock levels of this item.
+
+1.  <span class="ph cmd">Type the value <kbd class="ph userinput">10</kbd> in the relevant text box, then click <span class="ph uicontrol">Try it out</span>.</span>
+
+    <div class="itemgroup info">Scroll down to see the response. By inspecting the Response Body, you can see that this item costs $2.90 and 129 items are in stock.
+
+         {
+                                "DFH0XCMNOperationResponse": { "ca_return_code": 0, "ca_response_message":
+                                "RETURNED ITEM: REF =0010", "ca_inquire_single": { "ca_single_item": {
+                                    "in_sngl_stock": 129, "ca_sngl_description": "Ball Pens Black
+                                24pk", "ca_sngl_item_ref": 10, "on_sngl_order": 0, "ca_sngl_cost":
+                                    "002.90", "ca_sngl_department": 10 } } } } 
+
+    </div>
+
+## Expose an IMS application as a RESTful API.  
 

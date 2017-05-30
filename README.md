@@ -296,19 +296,19 @@ No previous knowledge of IMS, z/OS Connect EE, or API design is needed, but some
 Please wait a moment while your development environment loads (this takes about 20 seconds). When it loads, get started by [Creating the API Project](2_create_api_project.html "Create an API project that will contain your API and service mapping.").
 
 
-1.  [Creating the API Project](../../zos-connect-ee/ims/create_api_project.html)  
+1.  [Creating the API Project](#create_api_project)  
     Create an API project that will contain your API and service mapping.
-2.  [Creating the API](../../zos-connect-ee/ims/create_api.html)  
+2.  [Creating the API](#create_api)  
     Create a basic API that uses RESTful principles.
-3.  [Associating a service with the API](../../zos-connect-ee/ims/4_associate_service_with_api.html)  
+3.  [Associating a service with the API](#associate_service_with_api)  
     Associate your API to a Service Archive file.
-4.  [Mapping the request](../../zos-connect-ee/ims/5_map_request.html)  
+4.  [Mapping the request](#map_request)  
     Map your API parameters to fields in the associated service.
-5.  [Mapping the response](../../zos-connect-ee/ims/6_map_response.html)  
+5.  [Mapping the response](#map_response)  
     Remove irrelevant values from the response so that your API returns relevant fields only.
-6.  [Deploying the API](../../zos-connect-ee/ims/7_deploy_api.html)  
+6.  [Deploying the API](#deploy_api)  
     Package and deploy your API from within the API Editor.
-7.  [Testing the API](../../zos-connect-ee/ims/8_test_api.html)  
+7.  [Testing the API](#test_api)  
     Test your API by using the built-in Swagger UI.
 
 ### Creating the API Project <a name="create_api_project"></a>
@@ -354,9 +354,9 @@ You'll create an API that a consumer can use to add contact information to the p
 
 2.  <span class="ph cmd">Remove the GET, PUT and DELETE methods for this path by clicking on the <span class="ph uicontrol">X</span> icon associated with each method.</span>
 
-    <div class="itemgroup info">This leaves the POST method. The POST method is typically used for submitting data, which is the purpose of your API.  
-    ![Screen capture that shows correctly configured Paths and Methods.](img/leave_post_ims.gif)  
-    </div>
+This leaves the POST method. The POST method is typically used for submitting data, which is the purpose of your API.  
+![Screen capture that shows correctly configured Paths and Methods.](img/leave_post_ims.gif)  
+
 
 3.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 
@@ -386,9 +386,9 @@ In this scenario, the `.sar` file is already generated, so you can focus on crea
 5.  <span class="ph cmd">In the dialog box that opens, click <span class="ph uicontrol">OK</span> to confirm the import.</span>
 6.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
 
-    <div class="itemgroup info">The `contacts` service is now associated with the get method of your API.  
-    ![Screen shot that shows the contacts service correctly associated with the POST method of your API.](img/serv_assoc_ims.png)  
-    </div>
+The `contacts` service is now associated with the get method of your API.  
+![Screen shot that shows the contacts service correctly associated with the POST method of your API.](img/serv_assoc_ims.png)  
+ 
 
 7.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 
@@ -411,7 +411,9 @@ Map your API parameters to fields in the associated service.
 
 2.  <span class="ph cmd">Expand the `IVTNO_INPUT_MSG` section on the left side of the tab.</span>
 
-    <div class="itemgroup info">![Screen capture that shows how to expand the IVTNO_INPUT_MSG section in the request tab.](img/expand_section_ims.gif)This shows fields that are exposed through the API and made available to the REST clients. By default, it is a one-to-one mapping to the fields that are exposed by the service unless you change the mapping.</div>
+![Screen capture that shows how to expand the IVTNO_INPUT_MSG section in the request tab.](img/expand_section_ims.gif)
+
+This shows fields that are exposed through the API and made available to the REST clients. By default, it is a one-to-one mapping to the fields that are exposed by the service unless you change the mapping.
 
 3.  <span class="ph cmd">Right-click the `IN_COMMAND` field on right side of the tab, in the service definition, then click <span class="ph uicontrol">Add Assign transform</span>.</span>
 4.  <span class="ph cmd">In the <span class="ph uicontrol">Properties</span> view, at the bottom of the window, click <span class="ph uicontrol">General</span> and set <span class="ph uicontrol">Value</span> to <kbd class="ph userinput">ADD</kbd>.</span>
@@ -438,9 +440,9 @@ You can safely remove these fields to make the API response and the API document
 1.  <span class="ph cmd">Click <span class="ph uicontrol">Mapping...</span> for the POST method, then click <span class="ph uicontrol">Open Response Mapping</span>.</span>
 2.  <span class="ph cmd">Right-click `OUT_COMMAND`, and select <span class="ph uicontrol">Add Remove transform</span>.</span>
 
-    <div class="itemgroup info">This excludes this field from the body of the response.  
-    ![Screen shot that shows the correct configuration for the response tab for this scenario.](img/response_map_ims.png)  
-    </div>
+This excludes this field from the body of the response.  
+![Screen shot that shows the correct configuration for the response tab for this scenario.](img/response_map_ims.png)  
+
 
 3.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 4.  <span class="ph cmd">Close the <span class="ph uicontrol">response</span> tab.</span>
@@ -460,7 +462,7 @@ Package and deploy your API from within the API Editor.
 1.  <span class="ph cmd">In the <span class="ph uicontrol">Project Explorer</span> view, select your API project (<span class="ph uicontrol">phonebook</span>) and right-click to select <span class="ph menucascade"><span class="ph uicontrol">z/OS Connect EE</span> > <span class="ph uicontrol">Deploy API to z/OS Connect EE Server</span></span>.</span>
 2.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
 
-    <div class="itemgroup info">![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)Your API is being deployed.</div>
+![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)Your API is being deployed.
 
 3.  <span class="ph cmd">When deployment completes, click <span class="ph uicontrol">OK</span> on the Result dialog box.</span>
 

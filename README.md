@@ -8,12 +8,13 @@ z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 * It provides an intuitive workstation-based tool, the z/OS Connect EE API Editor, that enables a developer, with or without z/OS skills, to create RESTful APIs from traditional z/OS based assets. The core business assets that run on z/OS can easily be adapted to the latest mobile and cloud communication techniques and message protocol formats.
 * Mobile and cloud application developers, inside or outside the enterprise, can incorporate z/OS data and transactions into their applications without the need to understand z/OS subsystems. The z/OS resources appear as any other RESTful API. 
 
-In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems. The code will explain how to:
+## Scenarios
 
--Expose a CICS COBOL program as a RESTful API.
--Expose an IMS application as a RESTful API.
+In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems
 
-The following diagram shows how z/OS Connect EE connects mobile and cloud applications with z/OS assets:
+### Scenario One: Expose a CICS COBOL program as a RESTful API.
+### Scenario Two: Expose an IMS application as a RESTful API.
+
 <img src="img/Architecture.png" align="left" width="75%"  >
 <br clear="all" />
 

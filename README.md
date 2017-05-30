@@ -77,10 +77,9 @@ Before you create your API, you must create a new API project. A z/OS® Connect 
 
 
     *   type <kbd class="ph userinput">catalog</kbd> in the <span class="ph uicontrol">Project name</span> and <span class="ph uicontrol">API name</span> fields.
-    *   type <kbd class="ph userinput">/catalogManager</kbd> in the <span class="ph uicontrol">Base path</span> field.
+    *   type <kbd class="ph userinput">/catalogManager</kbd> in the <span class="ph uicontrol">Base path</span> field.    
 
-    ![A screen shot that shows the API project wizard, with the required text boxes filled in.](img/new_proj_zc_cics.png)  
-    </div>
+ ![A screen shot that shows the API project wizard, with the required text boxes filled in.](img/new_proj_zc_cics.png)  
 
 4.  <span class="ph cmd">Click <span class="ph uicontrol">Finish</span> to create the project in the Project Explorer.</span>
 
@@ -107,9 +106,8 @@ Create a basic API that uses RESTful principles.
 
 2.  <span class="ph cmd">Remove the POST, PUT, and DELETE methods for this path by clicking the <span class="ph uicontrol">X</span> icon associated with each method.</span>
 
-    <div class="itemgroup info">This leaves the GET method. The GET method is typically used for retrieving data, which is the purpose of your API.  
-    ![Screen capture that shows correctly configured Paths and Methods.](img/leave_get_cics.gif)  
-    </div>
+This leaves the GET method. The GET method is typically used for retrieving data, which is the purpose of your API.       
+![Screen capture that shows correctly configured Paths and Methods.](img/leave_get_cics.gif)  
 
 3.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 
@@ -138,9 +136,8 @@ In this scenario, the `.sar` file is already generated, so you can focus on crea
 5.  <span class="ph cmd">In the dialog box that opens, click <span class="ph uicontrol">OK</span> to confirm the import.</span>
 6.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
 
-    <div class="itemgroup info">The `inquireSingle` service is now associated with the get method of your API.  
-    ![Screen capture that shows the inquireSingle service that is correctly associated with the GET method of your API.](img/serv_assoc.png)  
-    </div>
+The `inquireSingle` service is now associated with the get method of your API.     
+![Screen capture that shows the inquireSingle service that is correctly associated with the GET method of your API.](img/serv_assoc.png)  
 
 7.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 
@@ -168,7 +165,9 @@ Map your API parameters to fields in the associated service.
 
 3.  <span class="ph cmd">In the <span class="ph uicontrol">Properties</span> view, at the bottom of the window, click <span class="ph uicontrol">General</span> and set <span class="ph uicontrol">Value</span> to <kbd class="ph userinput">01INQS</kbd>.</span>
 
-    <div class="itemgroup info">![Screen capture showing the Properties view](img/properties_cics.gif)Leave the <span class="ph uicontrol">Omit from interface</span> option checked to exclude this value from the API documentation.</div>
+![Screen capture showing the Properties view](img/properties_cics.gif)
+
+Leave the <span class="ph uicontrol">Omit from interface</span> option checked to exclude this value from the API documentation.
 
 4.  <span class="ph cmd">Expand the field `ca_inquire_single` so that the sub-field `ca_single_item` is visible.</span>
 5.  <span class="ph cmd">Select the fields `ca_return_code`, `ca_response_message`, and `ca_single_item`.</span>
@@ -213,9 +212,8 @@ You can safely remove these fields to make the API response and the API document
 
 4.  <span class="ph cmd">Right-click one of the selected fields, and select <span class="ph uicontrol">Add Remove transform</span>.</span>
 
-    <div class="itemgroup info">This excludes these fields from the body of the response.  
-    ![Screen capture that shows the correct configuration for the response tab for this scenario.](img/remove_action_cics.png)  
-    </div>
+This excludes these fields from the body of the response.  
+![Screen capture that shows the correct configuration for the response tab for this scenario.](img/remove_action_cics.png)  
 
 5.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 6.  <span class="ph cmd">Close the <span class="ph uicontrol">response</span> tab.</span>
@@ -235,7 +233,7 @@ Package and deploy your API from within the API Editor.
 1.  <span class="ph cmd">In the <span class="ph uicontrol">Project Explorer</span> view, select your API project (<span class="ph uicontrol">catalog</span>) and right-click to select <span class="ph menucascade"><span class="ph uicontrol">z/OS Connect EE</span> > <span class="ph uicontrol">Deploy API to z/OS Connect EE Server</span></span>.</span>
 2.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
 
-    <div class="itemgroup info">![Screen capture showing the Deploy API dialog box](img/deploy_cics.png)Your API is being deployed.</div>
+![Screen capture showing the Deploy API dialog box](img/deploy_cics.png)Your API is being deployed.
 
 3.  <span class="ph cmd">When deployment completes, click <span class="ph uicontrol">OK</span> on the Result dialog box.</span>
 

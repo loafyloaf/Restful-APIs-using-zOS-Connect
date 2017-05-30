@@ -45,22 +45,22 @@ Please wait a moment while your development environment loads (this takes about 
 
 
 
-1.  [Creating the API Project](../../zos-connect-ee/cics/2_create_api_project.html)  
+1.  [Creating the API Project](#create_api_project)  
     Create an API project that will contain your API and service mapping.
-2.  [Creating the API](../../zos-connect-ee/cics/3_create_api.html)  
+2.  [Creating the API](#create_api)  
     Create a basic API that uses RESTful principles.
-3.  [Associating a service with the API](../../zos-connect-ee/cics/4_associate_service_with_api.html)  
+3.  [Associating a service with the API](#associate_service_with_api)  
     Associate your API to a Service Archive file.
-4.  [Mapping the request](../../zos-connect-ee/cics/5_map_request.html)  
+4.  [Mapping the request](#map_request)  
     Map your API parameters to fields in the associated service.
-5.  [Mapping the response](../../zos-connect-ee/cics/6_map_response.html)  
+5.  [Mapping the response](#map_response)  
     Remove irrelevant values from the response so that your API returns relevant fields only.
-6.  [Deploying the API](../../zos-connect-ee/cics/7_deploy_api.html)  
+6.  [Deploying the API](#deploy_api)  
     Package and deploy your API from within the API Editor.
-7.  [Testing the API](../../zos-connect-ee/cics/8_test_api.html)  
+7.  [Testing the API](#test_api)  
     Test your API by using the built-in Swagger UI.
 
-### Creating the API Project
+### Creating the API Project  <a name="create_api_project"></a>
 
 
 Create an API project that will contain your API and service mapping.
@@ -90,7 +90,7 @@ Before you create your API, you must create a new API project. A z/OS® Connect 
 <section class="section postreq">The next step is to create your API: let's do that now.</section>
 
 
-### Creating the API
+### Creating the API <a name="create_api"></a>
 
 Create a basic API that uses RESTful principles.
 
@@ -115,7 +115,7 @@ This leaves the GET method. The GET method is typically used for retrieving data
 
 <section class="section postreq">Next, you'll associate your API with that relevant service.</section>
 
-### Associating a service with the API
+### Associating a service with the API <a name="associate_service_with_api"></a>
 
 Associate your API to a Service Archive file.
 
@@ -148,7 +148,7 @@ In this scenario, the connection between z/OS Connect EE and CICS is configured 
 The final step is to configure the mappings between your new API and the `inquireSingle` service, which represents the CICS COBOL application logic.
 
 
-### Mapping the request
+### Mapping the request <a name="map_request"></a>
 
 
 Map your API parameters to fields in the associated service.
@@ -194,7 +194,7 @@ Leave the <span class="ph uicontrol">Omit from interface</span> option checked t
 <section class="section postreq">The next step is to clean up the API response by removing fields that are not related to the API request.</section>
 
 
-### Mapping the response
+### Mapping the response <a name="map_response"></a>
 
 Remove irrelevant values from the response so that your API returns relevant fields only.
 
@@ -223,7 +223,7 @@ This excludes these fields from the body of the response.
 <section class="section postreq">You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.</section>
 
 
-### Deploying the API
+### Deploying the API <a name="deploy_api"></a>
 
 
 Package and deploy your API from within the API Editor.
@@ -244,7 +244,7 @@ Package and deploy your API from within the API Editor.
 <section class="section postreq">You can test your work now, by calling the API from within the development environment by using the built-in interactive API documentation.</section>
 
 
-### Testing the API
+### Testing the API <a name="test_api"></a>
 
 Test your API by using the built-in Swagger UI.
 

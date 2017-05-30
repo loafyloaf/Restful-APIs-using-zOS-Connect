@@ -13,7 +13,8 @@ z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 The following diagram shows how z/OS Connect EE connects mobile and cloud applications with z/OS assets:
 <img src="img/Architecture.png" align="left" width="75%"  >
 <br clear="all" />
-
+<img src="img/properties_cics.gif.png" align="left" width="75%"  >
+<br clear="all" />
 ## Included components
 
 [IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    

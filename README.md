@@ -1,14 +1,16 @@
-# zOS-Connect
-This Journey describes the steps to try out the z/OS Connect Enterprise Edition trials.
 
-## Overview
-IBM® z/OS® Connect Enterprise Edition is a framework that enables z/OS based programs and data to participate fully in the new API economy for mobile and cloud applications.
+In this code we show how to create efficient and scalable RESTful APIs for mobile and cloud applications securely from your business critical applications residing on the mainframe.
 
-IBM z/OS Connect Enterprise Edition V2.0 provides access to z/OS subsystems, such as CICS®, IMS™, WebSphere® MQ, DB2®, and Batch, that use RESTful APIs with JSON formatted messages. The framework provides concurrent access, through a common interface, to multiple z/OS subsystems.
+IBM z/OS Connect Enterprise Edition provides access to z/OS subsystems, such as CICS®, IMS™, WebSphere® MQ, DB2®, and Batch, that use RESTful APIs with JSON formatted messages. The framework provides concurrent access, through a common interface, to multiple z/OS subsystems.
 
 z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 * It provides an intuitive workstation-based tool, the z/OS Connect EE API Editor, that enables a developer, with or without z/OS skills, to create RESTful APIs from traditional z/OS based assets. The core business assets that run on z/OS can easily be adapted to the latest mobile and cloud communication techniques and message protocol formats.
 * Mobile and cloud application developers, inside or outside the enterprise, can incorporate z/OS data and transactions into their applications without the need to understand z/OS subsystems. The z/OS resources appear as any other RESTful API. 
+
+In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems. The code will explain how to:
+
+-Expose a CICS COBOL program as a RESTful API.
+-Expose an IMS application as a RESTful API.
 
 The following diagram shows how z/OS Connect EE connects mobile and cloud applications with z/OS assets:
 <img src="img/Architecture.png" align="left" width="75%"  >

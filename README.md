@@ -422,9 +422,7 @@ This shows fields that are exposed through the API and made available to the RES
 
 Leave the <span class="ph uicontrol">Omit from interface</span> option checked to exclude this value from the API documentation.
 
-    <div class="note note note_note"><span class="note__title">Note:</span> This mapping defines the flow of a value, which is passed in by an API consumer, to the service associated with the API. The service then passes the value to the IMS program. At each stage, the data is transformed into formats and structures that each participant can understand.</div>
-
-    </div>
+Note: This mapping defines the flow of a value, which is passed in by an API consumer, to the service associated with the API. The service then passes the value to the IMS program. At each stage, the data is transformed into formats and structures that each participant can understand.
 
 5.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 6.  <span class="ph cmd">Close the <span class="ph uicontrol">request</span> tab.</span>

@@ -41,8 +41,7 @@ This scenario guides you through the steps in roughly 30 minutes. By the end of 
 
 No previous knowledge of CICS, z/OS Connect EE, or API design is needed, but some awareness of API terminology might help.
 
-Please wait a moment while your development environment loads (this takes about 20 seconds). When it loads, get started by [Creating the API Project](2_create_api_project.html "Create an API project that will contain your API and service mapping.").
-
+Please wait a moment while your development environment loads (this takes about 20 seconds). 
 
 
 1.  [Creating the API Project](#create_api_project)  
@@ -295,8 +294,7 @@ This scenario guides you through the steps in roughly 30 minutes. By the end of 
 
 No previous knowledge of IMS, z/OS Connect EE, or API design is needed, but some awareness of API terminology might help.
 
-Please wait a moment while your development environment loads (this takes about 20 seconds). When it loads, get started by [Creating the API Project](2_create_api_project.html "Create an API project that will contain your API and service mapping.").
-
+Please wait a moment while your development environment loads (this takes about 20 seconds). 
 
 1.  [Creating the API Project](#create_api_project)  
     Create an API project that will contain your API and service mapping.
@@ -505,12 +503,11 @@ You can use your new API to add a new contact.
 
 2.  <span class="ph cmd">Click <span class="ph uicontrol">Try it out!</span>.</span>
 
-    <div class="itemgroup info">Information about the request URL, request headers, response body, response code, and response headers are provided. The response body contains the output message. The `OUT_MESSAGE` would contain one of the following messages:
+    Information about the request URL, request headers, response body, response code, and response headers are provided. The response body contains the output message. The `OUT_MESSAGE` would contain one of the following messages:
 
     *   ENTRY WAS ADDED
     *   ADDITION OF ENTRY HAS FAILED (this message indicates that the IN_LAST_NAME value you specified already exists)
 
-    </div>
 
 Congratulations! You've successfully exposed a IMS™ program as a RESTful API by using z/OS Connect EE!
 

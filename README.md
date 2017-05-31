@@ -39,14 +39,14 @@ In order to access the trial environment, you must be able to connect to a remot
 
 ## Scenario One: Expose a CICS COBOL program as a RESTful API
 
-IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing a CICS® application through a RESTful API quick and easy.
+IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing a CICS® program through a RESTful API quick and easy.
 
 ![](img/topology_cics.png)
 
 This scenario guides you through the steps in roughly 30 minutes. By the end of the session, you'll know how to:
 
 *   Create and deploy an API from within IBM Developer for z Systems™.
-*   Associate and map an API to a service representation of a CICS application, no code required.
+*   Associate and map an API to a service representation of a CICS program, no code required.
 *   Test an API by using the built-in Swagger UI.
 
 No previous knowledge of CICS, z/OS Connect EE, or API design is needed, but some awareness of API terminology might help.

@@ -12,8 +12,8 @@ z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 
 In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems
 
-[Scenario One: Expose a CICS COBOL program as a RESTful API](##scenario-one-expose-a-cics-cobol-program-as-a-restful-api)
-### Scenario Two: Expose an IMS application as a RESTful API.
+[Scenario One: Expose a CICS COBOL program as a RESTful API](#scenario-one-expose-a-cics-cobol-program-as-a-restful-api)
+[Scenario Two: Expose an IMS application as a RESTful API](#scenario-two-expose-an-ims-application-as-a-restful-api)
 
 <img src="img/Architecture.png" align="left" width="75%"  >
 <br clear="all" />
@@ -290,7 +290,7 @@ You can use your new API to check the price and stock levels of this item.
 Congratulations! You've successfully exposed a CICS® application as a RESTful API by using z/OS Connect EE!
 
 
-## Expose an IMS application as a RESTful API
+## Scenario Two: Expose an IMS application as a RESTful API
 
 IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing an IMS™ application through a RESTful API quick and easy.
 

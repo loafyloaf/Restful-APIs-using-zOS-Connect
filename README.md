@@ -27,7 +27,7 @@ In this journey we will show how to use z/OS Connect EE to create, deploy, and t
 
 ## Prerequisites
 
-To request a trial, go to [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, navigate to the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
+To request a trial, go to [z Systemts trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html#s-2). On this page, navigate to the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".
 Wait for an email notification from "zTrial".
 The waiting normally lasts several hours to one business day.   
 The trial is available through a Windows-based remote desktop environment.

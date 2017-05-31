@@ -277,7 +277,7 @@ You can use your new API to check the price and stock levels of this item.
                                     "002.90", "ca_sngl_department": 10 } } } } 
 
     </div>
-Congratulations! You've successfully exposed a CICS® application as a RESTful API by using z/OS C
+Congratulations! You've successfully exposed a CICS® application as a RESTful API by using z/OS Connect EE!
 
 
 ## Expose an IMS application as a RESTful API

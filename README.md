@@ -22,7 +22,8 @@ In this journey we will show how to use z/OS Connect EE to create, deploy, and t
 
 [IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
 [IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
-IBM® IMS® ???   
+[IBM® IMS®](https://www-01.ibm.com/software/data/db2imstools/products/ims-tools.html)    
+
 ## Prerequisites
 
 To request a trial, go to [IBM Trial homepage](https://www-03.ibm.com/systems/z/resources/trials.html). On this page, navigate to the **z/OS Connect Enterprise Edition** panel on the right. In the panel, click **"register now"** button and follow the steps. If everything goes through, you shoud see a screen titled "Congradulations, your environment is on its way".

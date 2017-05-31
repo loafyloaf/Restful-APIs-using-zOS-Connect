@@ -12,7 +12,7 @@ z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 
 In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems
 
-[Scenario One: Expose a CICS COBOL program as a RESTful API](#scenario-one-expose-a-cics-cobol-program-as-a-restful-api)
+[Scenario One: Expose a CICS COBOL program as a RESTful API](#scenario-one-expose-a-cics-cobol-program-as-a-restful-api)   
 [Scenario Two: Expose an IMS application as a RESTful API](#scenario-two-expose-an-ims-application-as-a-restful-api)
 
 <img src="img/Architecture.png" align="left" width="75%"  >

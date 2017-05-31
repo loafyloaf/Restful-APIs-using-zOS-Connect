@@ -22,7 +22,7 @@ In this journey we will show how to use z/OS Connect EE to create, deploy, and t
 
 [z/OS Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
 [CICS](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
-[IMS](https://www-01.ibm.com/software/data/db2imstools/products/ims-tools.html)
+[IMS](https://www-01.ibm.com/software/data/db2imstools/products/ims-tools.html)   
 [Swagger](http://swagger.io)
 
 ## Prerequisites

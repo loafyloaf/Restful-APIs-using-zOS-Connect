@@ -32,9 +32,9 @@ The waiting normally lasts several hours to one business day.
 The trial is available through a Windows-based remote desktop environment.
 
 In order to access the trial environment, you must be able to connect to a remote system over a network connection.
-Windows users should use the built-in Remote Desktop Connection application.       
-Mac users should use the Remote Desktop app, available from the App Store.       
-Linux users have several choices of remote desktop application, which might vary between distribution.   
+* Windows users should use the built-in Remote Desktop Connection application.       
+* Mac users should use the Remote Desktop app, available from the App Store.       
+* Linux users have several choices of remote desktop application, which might vary between distribution.   
 
 ## Steps
 

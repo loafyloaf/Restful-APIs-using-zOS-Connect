@@ -12,7 +12,7 @@ z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 
 In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems
 
-### Scenario One: Expose a CICS COBOL program as a RESTful API.
+[Scenario One: Expose a CICS COBOL program as a RESTful API](##scenario-one-expose-a-cics-cobol-program-as-a-restful-api)
 ### Scenario Two: Expose an IMS application as a RESTful API.
 
 <img src="img/Architecture.png" align="left" width="75%"  >
@@ -37,7 +37,7 @@ In order to access the trial environment, you must be able to connect to a remot
 * Mac users should use the Remote Desktop app, available from the App Store.       
 * Linux users have several choices of remote desktop application, which might vary between distribution.   
 
-## Expose a CICS COBOL program as a RESTful API.
+## Scenario One: Expose a CICS COBOL program as a RESTful API
 
 IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing a CICS® application through a RESTful API quick and easy.
 

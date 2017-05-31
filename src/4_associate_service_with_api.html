@@ -1,0 +1,44 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="Associate your API to a Service Archive file."><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/3_create_api.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/5_map_request.html"><meta name="rights" content="© 2017 IBM Corporation"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="part4"><meta name="DC.Language" content="en-us"><link rel="stylesheet" type="text/css" href="../.././commonltr.css"><link rel="stylesheet" type="text/css" href="../.././style.css"><title>Associating a service with the API</title></head><body id="part4"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Associating a service with the API</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">Associate your API to a Service Archive file.</p>
+        <section class="section context">
+            <p class="p">In z/OS Connect EE, a service archive file (<code class="ph codeph">.sar</code> file) represents
+                the underlying z/OS® asset.</p>
+            <p class="p">z/OS Connect EE provides tooling to generate <code class="ph codeph">.sar</code> files for its
+                compatible subsystems (including CICS®, IMS™, DB2®,
+                and IBM® MQ).</p>
+            <p class="p">In this scenario, the <code class="ph codeph">.sar</code> file is already generated, so you can
+                focus on creating, deploying, and testing your API.</p>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">Service...</span>.</span>
+                <div class="itemgroup info">The <span class="ph uicontrol">Select a z/OS Connect EE Service</span> dialog box
+                    opens.</div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">File System</span>.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Browse to <code class="ph codeph">C:/Service Archive Files</code>.</span>
+            </li><li class="li step stepexpand">
+<span class="ph cmd">Select the <code class="ph codeph">contacts.sar</code> file and click <span class="ph uicontrol">Open</span>.</span>
+</li><li class="li step stepexpand">
+                <span class="ph cmd">In the dialog box that opens, click <span class="ph uicontrol">OK</span> to confirm the
+                    import.</span>
+            </li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
+<div class="itemgroup info">The <code class="ph codeph">contacts</code> service is now associated with the get method of your API.<br><img class="image" src="images/serv_assoc_ims.png" alt="Screen shot that shows the contacts service correctly associated with the POST method of your API."><br></div>
+</li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">File</span> &gt; <span class="ph uicontrol">Save</span> from the
+                    menu to save your progress.</span>
+            </li></ol>
+        <section class="section result">Great, the POST method of your API is now configured to connect to the IMS program through the <code class="ph codeph">contacts</code> service.</section>
+        <section class="section postreq">
+            <p class="p">In this scenario, the connection between z/OS Connect EE and IMS is configured for you (using the IMS service provider).</p>
+            <p class="p">The final step is to configure the mappings between your new API and the
+<code class="ph codeph">contacts</code> service, which represents the IMS
+program logic.</p>
+        </section>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="previouslink"><strong>Previous topic:</strong> <a class="link" href="../../zos-connect-ee/ims/3_create_api.html" title="Create a basic API that uses RESTful principles.">Creating the API</a></div><div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../../zos-connect-ee/ims/5_map_request.html" title="Map your API parameters to fields in the associated service.">Mapping the request</a></div></div></nav></article></main></body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="Map your API parameters to fields in the associated service."><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/4_associate_service_with_api.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/6_map_response.html"><meta name="rights" content="© 2017 IBM Corporation"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="part_5_ims"><meta name="DC.Language" content="en-us"><link rel="stylesheet" type="text/css" href="../.././commonltr.css"><link rel="stylesheet" type="text/css" href="../.././style.css"><title>Mapping the request</title></head><body id="part_5_ims"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Mapping the request</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">Map your API parameters to fields in the associated service.</p>
+        <section class="section context">Use the request mapping to associate parameters in your API with fields in the
+<code class="ph codeph">contacts</code> service, and to remove redundant fields from the API
+documentation.</section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Next to the POST method, click <span class="ph uicontrol">Mapping...</span> then click
+                        <span class="ph uicontrol">Open Request Mapping</span>.</span>
+                <div class="itemgroup info">The <span class="ph uicontrol">request</span> tab opens.</div>
+            </li><li class="li step stepexpand">
+<span class="ph cmd">Expand the <code class="ph codeph">IVTNO_INPUT_MSG </code> section on the left side of the tab.</span>
+<div class="itemgroup info"><img class="image" src="images/expand_section_ims.gif" alt="Screen capture that shows how to expand the IVTNO_INPUT_MSG section in the request tab.">This shows fields that are exposed through
+the API and made available to the REST clients. By default, it is a one-to-one mapping to the fields
+that are exposed by the service unless you change the mapping.</div>
+</li><li class="li step stepexpand">
+                <span class="ph cmd">Right-click the <code class="ph codeph">IN_COMMAND</code> field on right side of the tab, in
+                    the service definition, then click <span class="ph uicontrol">Add Assign
+                    transform</span>.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">In the <span class="ph uicontrol">Properties</span> view, at the bottom of the window,
+                    click <span class="ph uicontrol">General</span> and set <span class="ph uicontrol">Value</span> to
+                        <kbd class="ph userinput">ADD</kbd>.</span>
+                <div class="itemgroup info"><img class="image" id="part_5_ims__image_zff_f1n_bz" src="images/properties_ims.gif" alt="Screen capture showing the Properties view">Leave the
+                        <span class="ph uicontrol">Omit from interface</span> option checked to exclude this
+                    value from the API documentation.<div class="note note note_note"><span class="note__title">Note:</span> This mapping defines the flow of a value,
+                        which is passed in by an API consumer, to the service associated with the
+                        API. The service then passes the value to the IMS program. At each
+                        stage, the data is transformed into formats and structures that each
+                        participant can understand.</div></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">File</span> &gt; <span class="ph uicontrol">Save</span> from the
+                    menu to save your progress.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Close the <span class="ph uicontrol">request</span> tab.</span>
+            </li></ol>
+        <section class="section postreq">The next step is to clean up the API response by removing fields that are not
+            related to the API request.</section>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="previouslink"><strong>Previous topic:</strong> <a class="link" href="../../zos-connect-ee/ims/4_associate_service_with_api.html" title="Associate your API to a Service Archive file.">Associating a service with the API</a></div><div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../../zos-connect-ee/ims/6_map_response.html" title="Remove irrelevant values from the response so that your API returns relevant fields only.">Mapping the response</a></div></div></nav></article></main></body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="Create an API project that will contain your API and service mapping."><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/3_create_api.html"><meta name="rights" content="© 2017 IBM Corporation"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="part2_ims"><meta name="DC.Language" content="en-us"><link rel="stylesheet" type="text/css" href="../.././commonltr.css"><link rel="stylesheet" type="text/css" href="../.././style.css"><title>Creating the API Project</title></head><body id="part2_ims"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Creating the API Project</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">Create an API project that will contain your API and service mapping.</p>
+        <section class="section context">
+            <p class="p">Before you create your API, you must create a new API project. A z/OS® Connect EE API Project contains files that represent
+                the API, and the mappings from the API to the services.</p>
+            <div class="note note note_note"><span class="note__title">Note:</span> You will connect to an IMS™ application that
+                holds contact information, so let's call our project
+                    <kbd class="ph userinput">phonebook</kbd>.</div>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">On the development environment menu bar, click <span class="ph uicontrol">File</span> &gt;
+                        <span class="ph uicontrol">New</span> &gt; <span class="ph uicontrol">Project...</span> to open
+                    the New Project wizard.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Expand the <span class="ph uicontrol">z/OS Connect Enterprise Edition</span> folder,
+                    select <span class="ph uicontrol">z/OS Connect EE API Project</span>, and click
+                        <span class="ph uicontrol">Next</span>.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Complete the fields as follows:</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="part2_ims__ul_dsq_jpv_1z">
+                        <li class="li">enter <kbd class="ph userinput">phoneBook</kbd> in the <span class="ph uicontrol">Project
+                                name</span> field and <span class="ph uicontrol">API name</span>
+                            field.</li>
+                        <li class="li">enter <kbd class="ph userinput">/phoneBook</kbd> in the <span class="ph uicontrol">Base
+                                path</span> field.</li>
+                    </ul>
+                    <br><img class="image" id="part2_ims__image_csq_jpv_1z" src="images/new_proj_zc_ims.png" alt="A screen shot that shows the API project wizard, with the required text boxes filled in."><br>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">Finish</span> to create the project in the Project
+                    Explorer.</span>
+                <div class="itemgroup info">The z/OS Connect EE API Editor dialog opens.</div>
+            </li></ol>
+        <section class="section result">Your API project is created.</section>
+        <section class="section postreq">The next step is to create your API: let's do that now.</section>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../../zos-connect-ee/ims/3_create_api.html" title="Create a basic API that uses RESTful principles.">Creating the API</a></div></div></nav></article></main></body></html>

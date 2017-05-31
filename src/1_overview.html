@@ -1,25 +1,22 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="concept"><meta name="description" content="IBM z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing an IMS application through a RESTful API quick and easy."><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/2_create_api_project.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/3_create_api.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/4_associate_service_with_api.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/5_map_request.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/6_map_response.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/7_deploy_api.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/8_test_api.html"><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/9_next_steps.html"><meta name="rights" content="© 2017 IBM Corporation"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="part1_ims"><meta name="DC.Language" content="en-us"><link rel="stylesheet" type="text/css" href="../.././commonltr.css"><link rel="stylesheet" type="text/css" href="../.././style.css"><title>Expose an IMS application through a RESTful API</title></head><body id="part1_ims"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
-    <h1 class="title topictitle1" id="ariaid-title1">Expose an IMS application through a RESTful
-        API</h1>
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="concept"><meta name="description" content="IBM z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing an IMS application through a RESTful API quick and easy."><meta name="DC.Relation" scheme="URI" content="../../zos-connect-ee/ims/2_create_api_project.html"><meta name="rights" content="© 2017 IBM Corporation"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="part1_ims"><meta name="DC.Language" content="en-us"><link rel="stylesheet" type="text/css" href="../.././commonltr.css"><link rel="stylesheet" type="text/css" href="../.././style.css"><title>Overview</title></head><body id="part1_ims"><nav role="toc"><ul><li class="active"><a href="../../zos-connect-ee/ims/1_overview.html">Overview</a></li><li><a href="../../zos-connect-ee/ims/2_create_api_project.html">Creating the API Project</a></li><li><a href="../../zos-connect-ee/ims/3_create_api.html">Creating the API</a></li><li><a href="../../zos-connect-ee/ims/4_associate_service_with_api.html">Associating a service with the API</a></li><li><a href="../../zos-connect-ee/ims/5_map_request.html">Mapping the request</a></li><li><a href="../../zos-connect-ee/ims/6_map_response.html">Mapping the response</a></li><li><a href="../../zos-connect-ee/ims/7_deploy_api.html">Deploying the API</a></li><li><a href="../../zos-connect-ee/ims/8_test_api.html">Testing the API</a></li><li><a href="../../zos-connect-ee/ims/9_next_steps.html">Next steps</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Overview</h1>
     
     <div class="body conbody"><p class="shortdesc">IBM® z/OS Connect Enterprise Edition (z/OS
         Connect EE) makes exposing an IMS™ application through a
         RESTful API quick and easy.</p>
-        <img class="image" src="images/topology_ims.png">
-        <p class="p">This scenario guides you through the steps in roughly 30 minutes. By the end of the
-            session, you'll know how to:</p>
-        <ul class="ul">
-            <li class="li">Create and deploy an API from within IBM
-                Developer for z Systems™.</li>
-            <li class="li">Associate and map an API to a service representation of a CICS application, no code
-                required.</li>
-            <li class="li">Test an API by using the built-in Swagger UI.</li>
-        </ul>
-        <p class="p">No previous knowledge of IMS, z/OS Connect EE, or
-            API design is needed, but some awareness of API terminology might help.</p>
-        <p class="p">Please wait a moment while your development environment loads (this takes about 20
-            seconds). When it loads, get started by <a class="xref" href="2_create_api_project.html" title="Create an API project that will contain your API and service mapping.">Creating the API Project</a>.</p>
-    </div>
-<nav role="navigation" class="related-links"><ol class="olchildlinks"><li class="link olchildlink"><a href="../../zos-connect-ee/ims/2_create_api_project.html">Creating the API Project</a><br>Create an API project that will contain your API and service mapping.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/3_create_api.html">Creating the API</a><br>Create a basic API that uses RESTful principles.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/4_associate_service_with_api.html">Associating a service with the API</a><br>Associate your API to a Service Archive file.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/5_map_request.html">Mapping the request</a><br>Map your API parameters to fields in the associated service.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/6_map_response.html">Mapping the response</a><br>Remove irrelevant values from the response so that your API returns relevant fields         only.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/7_deploy_api.html">Deploying the API</a><br>Package and deploy your API from within the API Editor.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/8_test_api.html">Testing the API</a><br>Test your API by using the built-in Swagger UI.</li><li class="link olchildlink"><a href="../../zos-connect-ee/ims/9_next_steps.html">Next steps</a><br>Found this scenario useful? Here are some next steps.</li></ol></nav></article></main></body></html>
+<img class="image" src="images/topology_ims.jpg">
+<p class="p">This scenario guides you through the steps in roughly 30 minutes. By the end of the session,
+you'll know how to:</p>
+<ul class="ul">
+<li class="li">Create and deploy an API from within IBM Developer for z Systems™.</li>
+<li class="li">Associate and map an API to a service representation of a IMS application, no code required.</li>
+<li class="li">Test an API by using the built-in Swagger UI.</li>
+</ul>
+<p class="p">No previous knowledge of IMS, z/OS Connect EE, or API design
+is needed, but some awareness of API terminology might help.</p>
+<p class="p">Please wait a moment while your development environment loads (this takes a minute or so). When
+it loads, get started by creating the API project.</p>
+</div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../../zos-connect-ee/ims/2_create_api_project.html" title="Create an API project that will contain your API and service mapping.">Creating the API Project</a></div></div></nav></article></main></body></html>

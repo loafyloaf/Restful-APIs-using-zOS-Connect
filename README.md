@@ -1,19 +1,28 @@
-# zOS-Connect
-This Journey describes the steps to try out the z/OS Connect Enterprise Edition trials.
+# Create RESTful APIs from traditional z/OS based assets using z/OS Connect
 
-## Overview
-IBM® z/OS® Connect Enterprise Edition is a framework that enables z/OS based programs and data to participate fully in the new API economy for mobile and cloud applications.
+In this code we show how to create efficient and scalable RESTful APIs for mobile and cloud applications securely from your business critical applications residing on the mainframe.
 
-IBM z/OS Connect Enterprise Edition V2.0 provides access to z/OS subsystems, such as CICS®, IMS™, WebSphere® MQ, DB2®, and Batch, that use RESTful APIs with JSON formatted messages. The framework provides concurrent access, through a common interface, to multiple z/OS subsystems.
+IBM z/OS Connect Enterprise Edition provides access to z/OS subsystems, such as CICS®, IMS™, WebSphere® MQ, DB2®, and Batch, that use RESTful APIs with JSON formatted messages. The framework provides concurrent access, through a common interface, to multiple z/OS subsystems.
 
 z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 * It provides an intuitive workstation-based tool, the z/OS Connect EE API Editor, that enables a developer, with or without z/OS skills, to create RESTful APIs from traditional z/OS based assets. The core business assets that run on z/OS can easily be adapted to the latest mobile and cloud communication techniques and message protocol formats.
 * Mobile and cloud application developers, inside or outside the enterprise, can incorporate z/OS data and transactions into their applications without the need to understand z/OS subsystems. The z/OS resources appear as any other RESTful API. 
 
+## Scenarios
+
+In this journey we will show how to use z/OS Connect EE to create, deploy, and test RESTful APIs that expose z/OS subsystems
+
+### Scenario One: Expose a CICS COBOL program as a RESTful API.
+### Scenario Two: Expose an IMS application as a RESTful API.
+
+<img src="img/Architecture.png" align="left" width="75%"  >
+<br clear="all" />
+
 ## Included components
-[IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
-[IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
-[IBM® IMS®](https://www-01.ibm.com/software/data/db2imstools/products/ims-tools.html)  
+
+[z/OS Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
+[CICS](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
+[IMS](https://www-01.ibm.com/software/data/db2imstools/products/ims-tools.html)    
 
 ## Prerequisites
 
@@ -23,9 +32,9 @@ The waiting normally lasts several hours to one business day.
 The trial is available through a Windows-based remote desktop environment.
 
 In order to access the trial environment, you must be able to connect to a remote system over a network connection.
-Windows users should use the built-in Remote Desktop Connection application.       
-Mac users should use the Remote Desktop app, available from the App Store.       
-Linux users have several choices of remote desktop application, which might vary between distribution.   
+* Windows users should use the built-in Remote Desktop Connection application.       
+* Mac users should use the Remote Desktop app, available from the App Store.       
+* Linux users have several choices of remote desktop application, which might vary between distribution.   
 
 ## Expose a CICS COBOL program as a RESTful API.
 

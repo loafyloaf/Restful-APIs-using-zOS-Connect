@@ -1,4 +1,4 @@
-# Create RESTful APIs from traditional z/OS based assets using z/OS Connect
+# Create RESTful APIs from zOS assets using zOS Connect
 
 In this code we show how to create efficient and scalable RESTful APIs for mobile and cloud applications securely from your business critical applications residing on the mainframe.
 

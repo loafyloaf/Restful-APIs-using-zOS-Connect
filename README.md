@@ -242,7 +242,7 @@ Package and deploy your API from within the API Editor.
 1.  <span class="ph cmd">In the <span class="ph uicontrol">Project Explorer</span> view, select your API project (<span class="ph uicontrol">catalog</span>) and right-click to select <span class="ph menucascade"><span class="ph uicontrol">z/OS Connect EE</span> > <span class="ph uicontrol">Deploy API to z/OS Connect EE Server</span></span>.</span>
 
 2. Optional: If the z/OS Connect EE server is disconnected, connect to the server by clicking on the red icon at the top of the Deploy API dialog. 
-//TODO: add image
+![Screen capture showing the Deploy API dialog box where the z/OS Connect EE server is initially disconnected.](img/connect_server_cics.gif)
 
 3. Click OK to deploy your API.
 

@@ -15,7 +15,7 @@ In this journey we will show how to use z/OS Connect EE to create, deploy, and t
 [Scenario One: Expose a CICS COBOL program as a RESTful API](#scenario-one-expose-a-cics-cobol-program-as-a-restful-api)   
 [Scenario Two: Expose an IMS application as a RESTful API](#scenario-two-expose-an-ims-application-as-a-restful-api)
 
-<img src="img/Architecture.png" align="left" width="75%"  >
+<img src="img/zOSConnect.png" align="left" width="100%"  >
 <br clear="all" />
 
 ## Included components

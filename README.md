@@ -13,7 +13,7 @@ z/OS Connect EE can help to deliver benefits for an enterprise in two ways.
 ## Included components
 [IBM® z/OS® Connect Enterprise Edition](https://www.ibm.com/us-en/marketplace/connect-enterprise-edition)    
 [IBM® CICS®](https://www-01.ibm.com/software/data/enterprise-application-servers/cics/)    
-IBM® IMS® ???   
+[IBM® IMS®](https://www-01.ibm.com/software/data/db2imstools/products/ims-tools.html)  
 
 ## Prerequisites
 

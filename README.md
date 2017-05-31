@@ -69,7 +69,7 @@ Please wait a moment while your development environment loads (this takes about 
 7.  [Testing the API](#test_api)  
     Test your API by using the built-in Swagger UI.
 
-### Creating the API Project  <a name="create_api_project"></a>
+### 1. Creating the API Project  <a name="create_api_project"></a>
 
 
 Create an API project that will contain your API and service mapping.
@@ -99,7 +99,7 @@ Before you create your API, you must create a new API project. A z/OS® Connect 
 <section class="section postreq">The next step is to create your API: let's do that now.</section>
 
 
-### Creating the API <a name="create_api"></a>
+### 2. Creating the API <a name="create_api"></a>
 
 Create a basic API that uses RESTful principles.
 
@@ -124,7 +124,7 @@ This leaves the GET method. The GET method is typically used for retrieving data
 
 <section class="section postreq">Next, you'll associate your API with that relevant service.</section>
 
-### Associating a service with the API <a name="associate_service_with_api"></a>
+### 3. Associating a service with the API <a name="associate_service_with_api"></a>
 
 Associate your API to a Service Archive file.
 
@@ -157,7 +157,7 @@ In this scenario, the connection between z/OS Connect EE and CICS is configured 
 The final step is to configure the mappings between your new API and the `inquireSingle` service, which represents the CICS COBOL application logic.
 
 
-### Mapping the request <a name="map_request"></a>
+### 4. Mapping the request <a name="map_request"></a>
 
 
 Map your API parameters to fields in the associated service.
@@ -203,7 +203,7 @@ Leave the <span class="ph uicontrol">Omit from interface</span> option checked t
 <section class="section postreq">The next step is to clean up the API response by removing fields that are not related to the API request.</section>
 
 
-### Mapping the response <a name="map_response"></a>
+### 5. Mapping the response <a name="map_response"></a>
 
 Remove irrelevant values from the response so that your API returns relevant fields only.
 
@@ -232,7 +232,7 @@ This excludes these fields from the body of the response.
 <section class="section postreq">You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.</section>
 
 
-### Deploying the API <a name="deploy_api"></a>
+### 6. Deploying the API <a name="deploy_api"></a>
 
 
 Package and deploy your API from within the API Editor.
@@ -253,7 +253,7 @@ Package and deploy your API from within the API Editor.
 <section class="section postreq">You can test your work now, by calling the API from within the development environment by using the built-in interactive API documentation.</section>
 
 
-### Testing the API <a name="test_api"></a>
+### 7. Testing the API <a name="test_api"></a>
 
 Test your API by using the built-in Swagger UI.
 
@@ -321,7 +321,7 @@ Please wait a moment while your development environment loads (this takes about 
 7.  [Testing the API](#testapi)  
     Test your API by using the built-in Swagger UI.
 
-### Creating the API Project <a name="createapi_project"></a>
+### 1. Creating the API Project <a name="createapi_project"></a>
 
 
 Create an API project that will contain your API and service mapping.
@@ -352,7 +352,7 @@ Before you create your API, you must create a new API project. A z/OS® Connect 
 
 <section class="section postreq">The next step is to create your API: let's do that now.</section>
 
-### Creating the API <a name="createapi"></a>
+### 2. Creating the API <a name="createapi"></a>
 
 Create a basic API that uses RESTful principles.
 
@@ -374,7 +374,7 @@ This leaves the POST method. The POST method is typically used for submitting da
 
 <section class="section postreq">Next, you'll associate your API with that relevant service.</section>
 
-### Associating a service with the API <a name="associateservice_with_api"></a>
+### 3. Associating a service with the API <a name="associateservice_with_api"></a>
 
 Associate your API to a Service Archive file.
 
@@ -409,7 +409,7 @@ In this scenario, the connection between z/OS Connect EE and IMS is configured f
 The final step is to configure the mappings between your new API and the `contacts` service, which represents the IMS program logic.
 
 
-### Mapping the request <a name="maprequest"></a>
+### 4. Mapping the request <a name="maprequest"></a>
 
 Map your API parameters to fields in the associated service.
 
@@ -439,7 +439,7 @@ Note: This mapping defines the flow of a value, which is passed in by an API con
 
 <section class="section postreq">The next step is to clean up the API response by removing fields that are not related to the API request.</section>
 
-### Mapping the response <a name="mapresponse"></a>
+### 5. Mapping the response <a name="mapresponse"></a>
 
 Remove irrelevant values from the response so that your API returns relevant fields only.
 
@@ -461,9 +461,8 @@ This excludes this field from the body of the response.
 
 <section class="section postreq">You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.</section>
 
-### Deploying the API <a name="deployapi"></a>
+### 6. Deploying the API <a name="deployapi"></a>
 
-<div class="body taskbody">
 
 Package and deploy your API from within the API Editor.
 
@@ -483,7 +482,7 @@ Package and deploy your API from within the API Editor.
 <section class="section postreq">You can test your work now, by calling the API from within the development environment by using the built-in interactive API documentation.</section>
 
 
-### Testing the API <a name="testapi"></a>
+### 7. Testing the API <a name="testapi"></a>
 
 Test your API by using the built-in Swagger UI.
 

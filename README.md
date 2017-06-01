@@ -304,12 +304,12 @@ IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing an IMS™
 This scenario guides you through the steps in roughly 30 minutes. By the end of the session, you'll know how to:
 
 *   Create and deploy an API from within IBM Developer for z Systems™.
-*   Associate and map an API to a service representation of a CICS application, no code required.
+*   Associate and map an API to a service representation of a IMS application, no code required.
 *   Test an API by using the built-in Swagger UI.
 
 No previous knowledge of IMS, z/OS Connect EE, or API design is needed, but some awareness of API terminology might help.
 
-Please wait a moment while your development environment loads (this takes about 20 seconds). 
+Please wait a moment while your development environment loads (this takes a minute or so). 
 
 1.  [Creating the API Project](#createapi_project)  
     Create an API project that will contain your API and service mapping.
@@ -343,7 +343,7 @@ Before you create your API, you must create a new API project. A z/OS® Connect 
 
     <div class="itemgroup info">
 
-    *   enter <kbd class="ph userinput">phoneBook</kbd> in the <span class="ph uicontrol">Project name</span> field and <span class="ph uicontrol">API name</span> field.
+    *   enter <kbd class="ph userinput">phonebook</kbd> in the <span class="ph uicontrol">Project name</span> field and <span class="ph uicontrol">API name</span> field.
     *   enter <kbd class="ph userinput">/phoneBook</kbd> in the <span class="ph uicontrol">Base path</span> field.
 
     ![A screen shot that shows the API project wizard, with the required text boxes filled in.](img/new_proj_zc_ims.png)  
@@ -384,9 +384,9 @@ This leaves the POST method. The POST method is typically used for submitting da
 Associate your API to a Service Archive file.
 
 
-In z/OS Connect EE, a service archive file (`.sar` file) represents the underlying z/OS® asset.
+In z/OS Connect EE, a service archive file (.sar file) provides information about the underlying service, including its expected request and response JSON schemas.
 
-z/OS Connect EE provides tooling to generate `.sar` files for its compatible subsystems (including CICS®, IMS™, DB2®, and IBM® MQ).
+Note: z/OS Connect EE provides tooling to generate .sar files for its compatible subsystems (including CICS®, IMS™, DB2®, and IBM® MQ).
 
 In this scenario, the `.sar` file is already generated, so you can focus on creating, deploying, and testing your API.
 
@@ -453,7 +453,7 @@ The API you're creating is designed to pass back information about a requested i
 You can safely remove these fields to make the API response and the API documentation clearer.
 
 1.  <span class="ph cmd">Click <span class="ph uicontrol">Mapping...</span> for the POST method, then click <span class="ph uicontrol">Open Response Mapping</span>.</span>
-2.  <span class="ph cmd">Right-click `OUT_COMMAND`, and select <span class="ph uicontrol">Add Remove transform</span>.</span>
+2.  <span class="ph cmd">Right-click `OUT_COMMAND` on the right side of the tab, and select <span class="ph uicontrol">Add Remove transform</span>.</span>
 
 This excludes this field from the body of the response.  
 ![Screen shot that shows the correct configuration for the response tab for this scenario.](img/response_map_ims.png)  
@@ -471,16 +471,20 @@ This excludes this field from the body of the response.
 
 Package and deploy your API from within the API Editor.
 
-<section class="section context">Deploying your API is a quick, simple process that you can complete without leaving the developer environment.</section>
+Deploying your API is a quick, simple process that you can complete without leaving the developer environment.
 
-1.  <span class="ph cmd">In the <span class="ph uicontrol">Project Explorer</span> view, select your API project (<span class="ph uicontrol">phonebook</span>) and right-click to select <span class="ph menucascade"><span class="ph uicontrol">z/OS Connect EE</span> > <span class="ph uicontrol">Deploy API to z/OS Connect EE Server</span></span>.</span>
-2.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
+1. In the Project Explorer view, select your API project (phonebook) and right-click to select z/OS Connect EEDeploy API to z/OS Connect EE Server.
 
-![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)Your API is being deployed.
+2. Optional: If the z/OS Connect EE server is disconnected, connect to the server by clicking on the red icon at the top of the Deploy API dialog.
 
-3.  <span class="ph cmd">When deployment completes, click <span class="ph uicontrol">OK</span> on the Result dialog box.</span>
+![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)
 
-    <div class="itemgroup stepresult">Your API is now successfully deployed!</div>
+You are now connected to the z/OS Connect EE server.
+3. Click OK to deploy your API.
+4. When the deployment completes, click OK in the Result dialog box.
+![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)
+
+Your API is now successfully deployed!
 
 <section class="section result">Creating and deploying this API using z/OS Connect EE gives your API consumers an easy, programmable way to interact with a IMS™application without having to work with unfamiliar data structures, or understand IMS.</section>
 
@@ -521,7 +525,7 @@ You can use your new API to add a new contact.
     *   ADDITION OF ENTRY HAS FAILED (this message indicates that the IN_LAST_NAME value you specified already exists)
 
 
-Congratulations! You've successfully exposed a IMS™ program as a RESTful API by using z/OS Connect EE!
+Congratulations! You've successfully exposed an IMS™ application as a RESTful API by using z/OS Connect EE!
 
 
 

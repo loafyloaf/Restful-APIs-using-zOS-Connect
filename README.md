@@ -41,7 +41,7 @@ In order to access the trial environment, you must be able to connect to a remot
 
 IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing a CICS® program through a RESTful API quick and easy.
 
-![](img/topology_cics.png)
+![](img/topology_cics.jpg)
 
 This scenario guides you through the steps in roughly 30 minutes. By the end of the session, you'll know how to:
 
@@ -146,7 +146,7 @@ In this scenario, the `.sar` file is already generated, so you can focus on crea
 6.  <span class="ph cmd">Click <span class="ph uicontrol">OK</span>.</span>
 
 The `inquireSingle` service is now associated with the get method of your API.     
-![Screen capture that shows the inquireSingle service that is correctly associated with the GET method of your API.](img/serv_assoc.png)  
+![Screen capture that shows the inquireSingle service that is correctly associated with the GET method of your API.](img/serv_assoc_cics.png)  
 
 7.  <span class="ph cmd">Click <span class="ph uicontrol">File</span> > <span class="ph uicontrol">Save</span> from the menu to save your progress.</span>
 

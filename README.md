@@ -242,11 +242,12 @@ Package and deploy your API from within the API Editor.
 1.  <span class="ph cmd">In the <span class="ph uicontrol">Project Explorer</span> view, select your API project (<span class="ph uicontrol">catalog</span>) and right-click to select <span class="ph menucascade"><span class="ph uicontrol">z/OS Connect EE</span> > <span class="ph uicontrol">Deploy API to z/OS Connect EE Server</span></span>.</span>
 
 2. Optional: If the z/OS Connect EE server is disconnected, connect to the server by clicking on the red icon at the top of the Deploy API dialog. 
+
 ![Screen capture showing the Deploy API dialog box where the z/OS Connect EE server is initially disconnected.](img/connect_server_cics.gif)
 
 3. Click OK to deploy your API.
 
-4. When deployment completes, click <span class="ph uicontrol">OK</span> on the Result dialog box.</span>
+4. When deployment completes, click OK on the Result dialog box.
 
 ![Screen capture showing the Deploy API dialog box](img/deploy_success_cics.png)
 
@@ -344,7 +345,7 @@ Before you create your API, you must create a new API project. A z/OS® Connect 
     <div class="itemgroup info">
 
     *   enter <kbd class="ph userinput">phonebook</kbd> in the <span class="ph uicontrol">Project name</span> field and <span class="ph uicontrol">API name</span> field.
-    *   enter <kbd class="ph userinput">/phoneBook</kbd> in the <span class="ph uicontrol">Base path</span> field.
+    *   enter <kbd class="ph userinput">/phonebook</kbd> in the <span class="ph uicontrol">Base path</span> field.
 
     ![A screen shot that shows the API project wizard, with the required text boxes filled in.](img/new_proj_zc_ims.png)  
     </div>

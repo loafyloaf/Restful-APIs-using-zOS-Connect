@@ -454,7 +454,7 @@ The API you're creating is designed to pass back information about a requested i
 You can safely remove these fields to make the API response and the API documentation clearer.
 
 1.  <span class="ph cmd">Click <span class="ph uicontrol">Mapping...</span> for the POST method, then click <span class="ph uicontrol">Open Response Mapping</span>.</span>
-2.  <span class="ph cmd">Right-click `OUT_COMMAND` on the right side of the tab, and select <span class="ph uicontrol">Add Remove transform</span>.</span>
+2.  <span class="ph cmd">Right-click `OUT_COMMAND` on the right side of the tab, and select <span class="ph uicontrol">Add Remove transform</span>.
 
 This excludes this field from the body of the response.  
 ![Screen shot that shows the correct configuration for the response tab for this scenario.](img/response_map_ims.png)  
@@ -465,7 +465,7 @@ This excludes this field from the body of the response.
 
 <section class="section result">You completed the request and response mappings.</section>
 
-<section class="section postreq">You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.</section>
+You completed your API front end, your service association, and respective API-to-service mappings, so go ahead and make this API available.
 
 ### 6. Deploying the API <a name="deployapi"></a>
 
@@ -485,6 +485,7 @@ You are now connected to the z/OS Connect EE server.
 3. Click OK to deploy your API.
 
 4. When the deployment completes, click OK in the Result dialog box.
+
 ![Screen capture showing the Deploy API dialog box](img/deploy_success_ims.png)
 
 Your API is now successfully deployed!

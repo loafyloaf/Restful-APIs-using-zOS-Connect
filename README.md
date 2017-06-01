@@ -300,7 +300,7 @@ Congratulations! You've successfully exposed a CICS® application as a RESTful A
 
 IBM® z/OS Connect Enterprise Edition (z/OS Connect EE) makes exposing an IMS™ application through a RESTful API quick and easy.
 
-![](img/topology_ims.png)
+![](img/topology_ims.jpg)
 
 This scenario guides you through the steps in roughly 30 minutes. By the end of the session, you'll know how to:
 
@@ -478,12 +478,14 @@ Deploying your API is a quick, simple process that you can complete without leav
 
 2. Optional: If the z/OS Connect EE server is disconnected, connect to the server by clicking on the red icon at the top of the Deploy API dialog.
 
-![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)
+![](img/connect_server_ims.gif)
 
 You are now connected to the z/OS Connect EE server.
+
 3. Click OK to deploy your API.
+
 4. When the deployment completes, click OK in the Result dialog box.
-![Screen capture showing the Deploy API dialog box](img/deploy_ims.png)
+![Screen capture showing the Deploy API dialog box](img/deploy_success_ims.png)
 
 Your API is now successfully deployed!
 
